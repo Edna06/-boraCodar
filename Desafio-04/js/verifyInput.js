@@ -1,8 +1,8 @@
 import {input, button} from './main.js'
 
 export function verify() {
-  var inputValue = input.value
-  var inputLength = inputValue.length
+  let inputValue = input.value
+  let inputLength = inputValue.length
 
   if (inputLength > 0) {
     button.classList.add('active')
