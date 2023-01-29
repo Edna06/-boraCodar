@@ -1,0 +1,238 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+font-size: 62.5%;
+
+--bg-body: #1A1924;
+--bg-input: #282843;
+--bg-message-received: #633BBC;
+--bg-message-send: #07847E;
+
+--color-status: #00B37E;
+--color-text: #E1E1E6;
+--color-fill-botton-hover: rgba(243, 44, 44, 0.893);
+
+--font-family-all: 'Roboto', sans-serif;
+}
+
+body {
+text-align: center;
+font-size: 1.6rem;
+width: auto;
+/* height: 100vh; */
+margin: 2.4rem 3.2rem 2.4rem 3.2rem;
+
+background: var(--bg-body);
+}
+
+body header {
+  display: flex;
+  justify-content: space-between;
+
+  align-items: center;
+  height: fit-content;
+  padding: 0;
+}
+
+body header .wrapper {
+  display: flex;
+}
+
+body header img{
+  margin-right: 1.6rem;
+}
+
+body header .wrapper div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  margin: 0.5rem 0;
+
+  height: fit-content;
+}
+
+body header h3 {
+color: var(--color-text);
+
+
+font-family: var(--font-family-all);
+font-style: normal;
+font-weight: 700;
+font-size: 1.6rem;
+line-height: 1.9rem;
+}
+
+body header p {
+  color: var(--color-status);
+
+  font-family: var(--font-family-all);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+}
+
+body header button {
+ background: none;
+ border: none;
+ transition: all .7s;
+
+ width: 2rem;
+ height: 2rem;
+ margin: auto;
+}
+
+body header button:hover path{
+  fill: var(--color-fill-botton-hover);
+}
+body header button:hover{
+  cursor: pointer;
+  transform: scale(0.99);
+}
+
+body main {
+  margin-top: 2.6rem;
+}
+
+body main .date h3,
+body main ul p{
+  color: var(--color-text);
+
+  font-family: var(--font-family-all);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+}
+
+body main ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: 11rem;
+}
+
+body main ul li {
+  margin-top: 3rem;
+}
+
+body main ul li .personWhoSendMessageAndTime,
+body main ul li .MessageSendByMeAndTime {
+  margin-bottom: 1rem;
+
+}
+
+body main ul li .personWhoSendMessageAndTime{
+  display: flex;
+  align-items:flex-start;
+}
+
+body main ul li .messageReceived{
+  padding: 1.4rem;
+  align-items:flex-start;
+
+  width: 14.9rem;
+  height: fit-content;
+  
+  background: var(--bg-message-received);
+  border-radius: 0px 8px
+}
+
+body main ul li:nth-child(even) {
+  display: flex;
+  flex-direction: column;
+  align-items:flex-end;
+  
+  margin-bottom: 1rem;
+}
+
+body main ul li .messageSend{
+  padding: 1.4rem;
+
+  width: fit-content;
+  
+  background: var(--bg-message-send) ;
+  border-radius: 8px 8px 0px 8px;
+}
+
+
+footer .sendMessage {
+background-color: var(--bg-input);
+
+position: fixed;
+bottom: 2.4rem;
+
+margin: auto;
+
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 1.4rem 2.4rem;
+gap: 1rem;
+
+width: 90%;
+height: fit-content;
+
+border-radius: 99rem;
+}
+
+footer .sendMessage input {
+background: none;
+border: none;
+width: 100%;
+
+font-family: var(--font-family-all);
+font-style: normal;
+font-weight: 400;
+font-size: 1.2rem;
+line-height: 1.4rem;
+
+color: var(--color-text);
+}
+
+
+footer .sendMessage input:focus {
+  box-shadow: 0 0 0 0;
+  outline: 0;
+}
+
+footer .sendMessage button{
+  background: none;
+  border: none;
+
+  transition: all 0.9s;
+}
+
+footer .sendMessage button.active svg path{
+  fill: rgb(83, 73, 230);
+  transition: all 1s;
+  cursor: pointer;
+  transform: scale(0.95);
+}
+
+
+
+/* Responsive screen */
+
+@media (min-width:768px) {
+  
+body{
+margin: 3.2rem 7.2rem 3.2rem 7.2rem;
+}
+
+body main ul li .messageReceived{
+width: fit-content;
+}
+
+footer .sendMessage {
+bottom: 3.2rem;
+}
+
+
+}
