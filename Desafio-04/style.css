@@ -120,6 +120,22 @@ body main ul {
 
 body main ul li {
   margin-top: 3rem;
+
+  animation: fromTop .7s 0.4s backwards ;
+}
+
+body main ul li:nth-child(2) {
+  animation: fromTop .7s 0.8s backwards ;
+}
+
+
+body main ul li:nth-child(3) {
+  animation: fromTop .7s 1.2s backwards ;
+}
+
+
+body main ul li:nth-child(4) {
+  animation: fromTop .7s 1.6s backwards ;
 }
 
 body main ul li .personWhoSendMessageAndTime,
@@ -217,7 +233,6 @@ footer .sendMessage button.active svg path{
 }
 
 
-
 /* Responsive screen */
 
 @media (min-width:768px) {
@@ -232,7 +247,19 @@ width: fit-content;
 
 footer .sendMessage {
 bottom: 3.2rem;
-}
+}}
 
 
+/* animation */
+
+@keyframes fromTop {
+  0% {
+    opacity: 0;
+    transform: translateY(80px);
+  }
+
+  100% { 
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
