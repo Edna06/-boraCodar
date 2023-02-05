@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="calculator">
+      <div class="number_display">
+        <div class="calculation">1 + 1</div>
+        <div class="result_display">
+          <span> <img src="./assets/equals.svg" alt="equals symbol"/> </span>
+          <p></p>
+        </div>
+      </div>
+
+      
+        <table>
+          <tr>
+            <td><button class="cancel_entry">CE</button></td>
+            <td><button class="clear">C</button></td>
+            <td>
+              <button onclick="insert('%')">
+                <img src="./assets/porcent.svg" alt="porecent button" />
+              </button>
+            </td>
+            <td>
+              <button class="symbol" onclick="insert('/')">
+                <img src="./assets/divide.svg" alt="divide button" />
+              </button>
+            </td>
+          </tr>
+
+          <tr>
+            <td><button onclick="insert('7')">7</button></td>
+            <td><button onclick="insert('8')">8</button></td>
+            <td><button onclick="insert('9')">9</button></td>
+            <td>
+              <button class="symbol" onclick="insert('*')">
+                <img src="./assets/multiply.svg" alt="multiply button" />
+              </button>
+            </td>
+          </tr>
+
+          <tr>
+            <td><button onclick="insert('4')">4</button></td>
+            <td><button onclick="insert('5')">5</button></td>
+            <td><button onclick="insert('6')">6</button></td>
+            <td>
+              <button class="symbol" onclick="insert('-')">
+                <img src="./assets/minus.svg" alt="minus button" />
+              </button>
+            </td>
+          </tr>
+
+          <tr>
+            <td><button onclick="insert('1')">1</button></td>
+            <td><button onclick="insert('2')">2</button></td>
+            <td><button onclick="insert('3')">3</button></td>
+            <td>
+              <button class="symbol" onclick="insert('+')"><img src="./assets/plus.svg" alt="plus button" /></button>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <button>
+                <img src="./assets/plusMinus.svg" alt="plus minus button" />
+              </button>
+            </td>
+            <td><button onclick="insert('0')">0</button></td>
+            <td><button onclick="insert('.')">,</button></td>
+            <td>
+              <button class="symbol_equal">
+                <img src="./assets/equalsWhite.svg" alt="equals button" />
+              </button>
+            </td>
+          </tr>
+        </table>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
