@@ -91,15 +91,14 @@ body .calculator .number_display .result_display{
   letter-spacing: -0.02em;
 }
 
-body .calculator .number_display .result_display .equal_display{
-  display: none;
-}
-
-
 body .calculator .number_display .result_display p{
   width: 100%;
   display: flex;
   justify-content: end;
+}
+
+body .calculator .number_display .result_display .equal_display{
+  display: none;
 }
 
 body table{
