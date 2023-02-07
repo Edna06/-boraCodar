@@ -58,7 +58,7 @@ const selectOperator = event => {
 };
 
 operators.forEach(operator =>
-  operator.addEventListener('click', selectOperator);
+  operator.addEventListener('click', selectOperator)
 );
 
 // config equal button
