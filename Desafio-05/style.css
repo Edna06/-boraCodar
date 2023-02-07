@@ -134,13 +134,22 @@ body table td button:active {
 filter: brightness(0.8);
 }
 
-body table td button.clear {
+body table td button#cancel_entry {
 color: var(--color-button-CE);
 }
 
 body table td button.symbol {
 background: var(--color-bg-button-02);
 }
+
+body table td button span{
+  position: absolute;
+  color: #6b6b6b00;
+  height: 25px;
+  width: 25px;
+  padding: 0;
+  margin: -1px;
+} 
 
 body table td button.symbol_equal {
 background: var(--color-bg-button-03);

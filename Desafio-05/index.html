@@ -20,75 +20,82 @@
       <div class="number_display">
         <div class="calculation"></div>
         <div class="result_display">
-          <span class="equal_display"> <img src="./assets/equals.svg" alt="equals symbol"/> </span>
+          <span class="equal_display">
+            <img src="./assets/equals.svg" alt="equals symbol" />
+          </span>
           <p></p>
         </div>
       </div>
 
-      
-        <table>
-          <tr>
-            <td><button class="cancel_entry">CE</button></td>
-            <td><button class="clear">C</button></td>
-            <td>
-              <button onclick="insert('%')">
-                <img src="./assets/porcent.svg" alt="porecent button" />
-              </button>
-            </td>
-            <td>
-              <button class="symbol" onclick="insert('/')">
-                <img src="./assets/divide.svg" alt="divide button" />
-              </button>
-            </td>
-          </tr>
+      <table>
+        <tr>
+          <td><button id="cancel_entry">CE</button></td>
+          <td><button id="clear">C</button></td>
+          <td>
+            <button id="porcentageOperator">
+              <span>%</span>
+              <img src="./assets/porcent.svg" alt="porecent button" />
+            </button>
+          </td>
+          <td>
+            <button class="symbol" id="divideOperator">
+              <img src="./assets/divide.svg" alt="divide button" />
+              <span>/</span>
+            </button>
+          </td>
+        </tr>
 
-          <tr>
-            <td><button onclick="insert('7')">7</button></td>
-            <td><button onclick="insert('8')">8</button></td>
-            <td><button onclick="insert('9')">9</button></td>
-            <td>
-              <button class="symbol" onclick="insert('*')">
-                <img src="./assets/multiply.svg" alt="multiply button" />
-              </button>
-            </td>
-          </tr>
+        <tr>
+          <td><button id="key7">7</button></td>
+          <td><button id="key8">8</button></td>
+          <td><button id="key9">9</button></td>
+          <td>
+            <button class="symbol" id="multiplyOperator">
+              <span>*</span>
+              <img src="./assets/multiply.svg" alt="multiply button" />
+            </button>
+          </td>
+        </tr>
 
-          <tr>
-            <td><button onclick="insert('4')">4</button></td>
-            <td><button onclick="insert('5')">5</button></td>
-            <td><button onclick="insert('6')">6</button></td>
-            <td>
-              <button class="symbol" onclick="insert('-')">
-                <img src="./assets/minus.svg" alt="minus button" />
-              </button>
-            </td>
-          </tr>
+        <tr>
+          <td><button id="key4">4</button></td>
+          <td><button id="key5">5</button></td>
+          <td><button id="key6">6</button></td>
+          <td>
+            <button class="symbol" id="minusOperator">
+              <span>-</span>
+              <img src="./assets/minus.svg" alt="minus button" />
+            </button>
+          </td>
+        </tr>
 
-          <tr>
-            <td><button onclick="insert('1')">1</button></td>
-            <td><button onclick="insert('2')">2</button></td>
-            <td><button onclick="insert('3')">3</button></td>
-            <td>
-              <button class="symbol" onclick="insert('+')"><img src="./assets/plus.svg" alt="plus button" /></button>
-            </td>
-          </tr>
+        <tr>
+          <td><button id="key1">1</button></td>
+          <td><button id="key2">2</button></td>
+          <td><button id="key3">3</button></td>
+          <td>
+            <button class="symbol" id="plusOperator">
+              <span>+</span>
+              <img src="./assets/plus.svg" alt="plus button" />
+            </button>
+          </td>
+        </tr>
 
-          <tr>
-            <td>
-              <button
-              class="invert">
-                <img src="./assets/plusMinus.svg" alt="plus minus button" />
-              </button>
-            </td>
-            <td><button onclick="insert('0')">0</button></td>
-            <td><button onclick="insert('.')">,</button></td>
-            <td>
-              <button class="symbol_equal">
-                <img src="./assets/equalsWhite.svg" alt="equals button" />
-              </button>
-            </td>
-          </tr>
-        </table>
+        <tr>
+          <td>
+            <button class="invert" id="invertSign">
+              <img src="./assets/plusMinus.svg" alt="plus minus button" />
+            </button>
+          </td>
+          <td><button id="key0">0</button></td>
+          <td><button id="comma">,</button></td>
+          <td>
+            <button class="symbol_equal" id="result">
+              <img src="./assets/equalsWhite.svg" alt="equals button" />
+            </button>
+          </td>
+        </tr>
+      </table>
     </div>
 
     <script src="./script2.js"></script>
