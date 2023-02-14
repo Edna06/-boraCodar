@@ -1,0 +1,176 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  font-size: 1.6rem;
+  font-family: 'Rubik', sans-serif;
+
+  background: linear-gradient(167.96deg, #8257E5 0%, #271A45 100%);
+  background-repeat: no-repeat;
+  background-position: 100%;
+  
+  text-align: center;  
+}
+
+body .header h2{
+  margin-top: 7.8rem; 
+  margin-bottom: 2rem;
+  color: white;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+body .ticket{ 
+  margin: auto;
+  width: 32.7rem;
+}
+body .ticket .fight_info,
+body .ticket .passanger_info {
+  padding: 2.4rem 3.2rem;
+  background: #FFFFFF;
+  border-radius: 2.4rem;
+
+  border-bottom: 1.4px dashed rgba(0, 0, 0, 0.32);
+}
+
+body .ticket .fight_info .info,
+body .ticket .passanger_info .info,
+body .ticket .boarding_info .info{
+display: flex;
+justify-content: space-between;
+
+color: rgba(0, 0, 0, 0.88);
+font-style: normal;
+font-weight: 500;
+font-size: 1.6rem;
+line-height: 1.9rem;
+}
+
+body .ticket .fight_info .info span,
+body .ticket .fight_info .wrapper span,
+body .ticket .passanger_info .passager_name span,
+body .ticket .passanger_info .seat span{
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 17px;
+  color: rgba(0, 0, 0, 0.64);
+}
+
+body .ticket .fight_info .flight,
+body .ticket .fight_info .date,
+body .ticket .fight_info .departure,
+body .ticket .fight_info .arrival,
+body .ticket .passanger_info .passager_name,
+body .ticket .passanger_info .seat
+{
+  display: flex;
+  flex-direction: column;
+}
+
+body .ticket .fight_info .flight, 
+body .ticket .fight_info .departure,
+body .ticket .passanger_info .passager_name
+{
+  align-items: flex-start;
+}
+
+body .ticket .fight_info .date,
+body .ticket .fight_info .arrival,
+body .ticket .passanger_info .seat{
+  align-items: flex-end;
+}
+
+body .ticket .fight_info .wrapper{
+  margin-top: 2.4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+body .ticket .fight_info .wrapper h2{
+  font-weight: 500;
+  font-size: 4.0rem;
+  line-height: 4.7rem;
+
+  color: rgba(0, 0, 0, 0.88);
+}
+
+body .ticket .fight_info .wrapper p{
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  
+  color: rgba(0, 0, 0, 0.8);
+  display: flex;
+}
+
+body .ticket .fight_info .wrapper p span{
+  font-weight: 500;
+  font-size: 1.0rem;
+  line-height: 1.2rem;
+ 
+  
+  color: rgba(0, 0, 0, 0.8);
+}
+
+body .ticket .passanger_info .info {
+  display: flex;
+  flex-direction: row;
+}
+
+body .ticket .boarding_info {
+  padding: 2.4rem 3.2rem;
+  background: #FFFFFF;
+  border-radius: 2.4rem;
+}
+
+body .ticket .boarding_info .info {
+  display: flex;
+  border: 1px solid red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body .footer{
+  margin-top: 2rem;
+
+  display: flex;
+  justify-content: center;
+}
+
+body .footer p{
+font-size: 1.4rem;
+font-weight: 400;
+line-height: 2.4rem;
+color: #FFFFFF;
+opacity: 0.64;
+
+width: 26.914rem;
+height: 4.8rem;
+
+letter-spacing: -0.02em;
+}
