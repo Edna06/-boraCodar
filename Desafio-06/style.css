@@ -17,6 +17,7 @@ body {
   background: linear-gradient(167.96deg, #8257E5 0%, #271A45 100%);
   background-repeat: no-repeat;
   background-position: 100%;
+ 
   
   text-align: center;  
 }
@@ -133,16 +134,63 @@ body .ticket .boarding_info {
   border-radius: 2.4rem;
 }
 
-body .ticket .boarding_info .info {
-  display: flex;
-  border: 1px solid red;
+
+body .ticket .boarding_info .info .boarding {
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 1rem;
+
+margin-top: .2rem ;
+}
+
+body .ticket .boarding_info .info .boarding span{
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  color: rgba(0, 0, 0, 0.64);  
+}
+
+body .ticket .boarding_info .info .boarding .time p{
+color: #FFFFFF;
+background-color:#633BBC;
+border-radius: .8rem;
+width: 5.4rem;
+height: 2.7rem;
+padding: .4rem .8rem;
 }
 
 
+body .ticket .boarding_info .info .boarding p{
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+  color: rgba(0, 0, 0, 0.88);  
+}
 
 
+body .ticket .boarding_info .info .QR_code{
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 1.6rem;
 
+}
 
+body .ticket .boarding_info .info .QR_code span{
+  font-weight: 400;
+  font-size: 1.4rem;
+  color: rgba(0, 0, 0, 0.64);
+}
+
+body .ticket .boarding_info .attention p{
+margin-top: 2.4rem;
+
+font-size: 1.6rem;
+line-height: 2rem;
+color: rgba(0, 0, 0, 0.8);
+}
 
 
 
