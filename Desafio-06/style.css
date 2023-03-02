@@ -193,16 +193,6 @@ color: rgba(0, 0, 0, 0.8);
 }
 
 
-
-
-
-
-
-
-
-
-
-
 body .footer{
   margin-top: 2rem;
 
@@ -221,4 +211,32 @@ width: 26.914rem;
 height: 4.8rem;
 
 letter-spacing: -0.02em;
+}
+
+@media (min-width:700px){
+  
+  body .ticket .divider {
+    color: white;
+    background: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 24px;
+    background-color: var(--gray_100);
+  
+    --mask: radial-gradient(12px at 12px, transparent 99%, black) -12px;
+    -webkit-mask: var(--mask);
+    mask: var(--mask);
+    --mask-repeat: repeat-x;
+    -webkit-mask-repeat: var(--mask-repeat);
+    mask-repeat: var(--mask-repeat);
+  }
+  
+  .divider__ruler {
+    width: 300px;
+    border-top: dashed var(--gray_200) 1px;
+    z-index: 2;
+  }
+
+
 }
