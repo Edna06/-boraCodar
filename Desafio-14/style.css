@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  background: #FBFAFF;
+  min-height: 100vh;
+  font-family: 'Inter';
+  line-height: 130%;
+}
+
+#app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  max-width: 440px;
+  width: 90%;
+  margin: auto;
+}
+
+
+.drag-files {
+background: #F3F0FF;
+border: 1px dashed #C1B2FA;
+border-radius: 8px;
+
+text-align: center;
+padding: 28px 0 32px;
+
+position: relative;
+}
+
+.drag-files input {
+  all: unset;
+  opacity: 0;
+  inset: 0;
+  position: absolute;
+  width: 100%;
+  cursor: pointer;
+}
+
+.drag-files i.ph{
+  font-size: 48px;
+  color: #7C3AED;
+}
+
+.drag-files h3{
+  margin-top: 12px;
+
+  color: #7A5FEC;
+  font-size: 16px;
+}
+
+.drag-files p {
+  font-size: 14px;
+  color: #746e82;
+}
+
+.drag-files.dragover{
+  background: #EBE6FF;
+}
+
+/* upload boxes */
+.files{
+  margin-top: 20px;
+
+  display: grid;
+  gap: 18px;
+}
+
+/* box */
+.box {
+  padding: 8px;
+
+  background: #FFFFFF;
+  box-shadow: 0px 4px 16px #EAE2FD;
+  border-radius: 8px;
+
+  display: flex;
+  gap: 12px;
+
+  --icon-bg: #eee;
+  --icon-color: #aaa;
+  --progress-color: black;
+  --progress-text: #999;
+
+  position: relative;
+}
+
+/* icon */
+.box .icon{
+  background: var(--icon-bg);
+  border-radius: 4px;
+
+  padding: 16px 12px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box .icon i{
+  font-size: 24px;
+  color: var(--icon-color)
+}
+
+/* info */
+.box .info {
+  flex: 1;
+}
+
+.box .filename{
+  font-size: 14px;
+  font-weight: 700;
+  color: #575361;
+}
+
+.info .filesize{
+  color: #857E95;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+/* bar progress */
+.bar{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  line-height: 0;
+  margin-top: 4px;
+}
+
+
+progress {
+  flex: 1;/* para a barra ocupar todo o espaço */
+
+  -webkit-appearance: none;
+  appearance: none;
+
+  height: 8px;
+  border-radius: 999px;
+  overflow: hidden;/* para que não haja transbordamento na caixa e o border-radius seja aplicado  */
+}
+
+progress::-webkit-progress-bar{
+  background: #E3E3ED;
+}
+
+progress::-webkit-progress-value{
+  background: var(--progress-color);
+}
+
+.bar span{
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--progress-text);
+}
+
+/* actions */
+.action {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  color: #794FED;
+
+  cursor: pointer;
+}
+
+/* colors */
+
+.uploading {
+  --icon-bg: #E9E3F8;
+  --icon-color: #AC96E4;
+  --progress-color: linear-gradient(90deg, rgba(58, 97, 237, 0.52) 0%, #7C3AED 100%);
+  --progress-text: #9892A6;
+}
+
+.done {
+  --icon-bg: #DAF2D9;
+  --icon-color: #73B172;
+  --progress-color: #73B172;
+  --progress-text:#4E884D;
+}
+
+.error {
+  --icon-bg: #F2D9D9;
+  --icon-color: #E36363;
+  --progress-color: transparent;
+  --progress-text:#E36363;
+}
